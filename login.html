@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | UriSense</title>
+    <link rel="stylesheet" href="logstyle.css">
+</head>
+<body class="dark-mode">
+
+    <div class="login-container">
+        <div class="glass-box">
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <h2>Welcome Back</h2>
+            <p>Login to access your dashboard</p>
+
+            <div class="input-container">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <span class="icon">📧</span>
+            </div>
+
+            <div class="input-container">
+                <input type="password" id="login-password" placeholder="Password" required>
+                <span class="icon">🔒</span>
+            </div>
+
+            <button id="login-btn" class="btn-login">Login</button>
+
+            <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+            <p id="login-error" style="color: red;"></p>
+        </div>
+    </div>
+
+    <!-- Firebase & Auth -->
+    <script type="module" src="auth.js"></script>
+
+</body>
+</html>
